@@ -1,104 +1,368 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Table of Contents 
 
-Welcome USER_NAME,
+1. [**Introduction**](#Introduction-&-Site-Purpose)
+2. [**User Experience (UX)**](#User-Experience-(UX))
+    * [Project goals](#Project-goals)
+    * [User Goals](#User-Goals)
+    * [Site Owner’s Goals](#Site-Owner’s-Goals)
+    * [Target audience](#Target-audience)
+    * [Research](#Research) 
+    * [Business goals](#Business-goals)
+    * [User stories](#User-stories)
+    * [Structure](#Structure)
+    * [Wireframes](#Wireframes)
+    * [Design](#Design) 
+      * [Colour scheme](#Colour-scheme)
+      * [Typography](#Typography)
+      * [Imagery](#Imagery)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+3. [**Features**](#Features)
+    * [Existing Features](#Existing-Features)
+    * [Features to be implemented in the future](#Features-to-be-implemented-in-the-future)
 
-## Gitpod Reminders
+4. [**Technologies used**](#Technologies-used)
+    * [Languages](#Languages)
+    * [Frameworks, libraries and programs used](#Frameworks,-libraries-and-programs-used)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+5. [**Deployment**](#Deployment)
+    * [Deploying to GitHub Pages](#Deploying-to-GitHub-Pages)
+    * [Forking to GitHub Repository](#Forking-to-GitHub-Repository)
+    * [Making a local clone](#Making-a-local-clone)
 
-`python3 -m http.server`
+6. [**Testing**](#Testing)
+    * [Testing Approach](#Testing-Approach)
+    * [User stories testing from the UX section](#User-stories-testing-from-the-UX-section)
+    * [Validator Testing](#Validator-Testing)
+    * [Lighthouse Testing](#Lighthouse-Testing)
+    * [Further Testing](#Further-Testing)
+    * [Devices and browsers](#Devices-and-browsers)
+    * [Issues and Bugs](#Issues-and-Bugs)
 
-A blue button should appear to click: _Make Public_,
+7. [**Credits**](#Credits)
+    * [Code](#Code)
+    * [Images](#Images)
+    * [Content](#Content)
+   
+8. [**Acknowledgments**](#Acknowledgments)
 
-Another blue button should appear to click: _Open Browser_.
+9. [**Disclaimer**](#Disclaimer)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<br>
 
-A blue button should appear to click: _Make Public_,
+# Welcome to X
 
-Another blue button should appear to click: _Open Browser_.
+[Visit live page here](#)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<br>
 
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
+## Introduction & Site Purpose
 ---
 
-Happy coding!
+### Project Name
+<br>
+
+![Project Name](#) is responsive on various screen sizes.
+
+[about]
+
+## User Experience (UX)
+---
+### Project goals
+
+* 
+
+### User Goals
+* 
+### Site Owner’s Goals:
+* 
+### Target audience for this website is:
+
+* 
+### Research: 
+
+### Business goals:
+
+### User stories:
+
+* **First Time Visitor Goals:**
+
+  * 
+
+* **Returning Visitor Goals:**
+
+  * 
+
+* **Site Owner Goals:**
+
+  * 
+
+### Structure:
+
+### Wireframes:
+
+Low fidelity mock-ups were made using Balsamiq to help plan and visualise the navigation design, placement of information, features, relationship between the content and usefulness. They were created for 3 main screen sizes: mobile, tablet and desktop.
+
+* [Wireframes - X](#)
+* [Wireframes - Y](#)
+
+
+### Design:  
+
+* **Colour scheme**
+    
+    ![Colours](#))
+
+    <br>
+
+* **Typography**
+
+    The fonts were sourced from [Google Fonts](https://fonts.google.com/)
+    
+<br> 
+
+* **Imagery**
+
+    All images were sourced from [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/) and [Pixabay](https://pixabay.com/).
+
+<br>
+
+## Features
+---
+
+### Existing Features
+
+* **Navigation**
+
+  * 
+
+* **Main Section**
+
+  * 
+
+* **Secondary Section**
+
+* **Contact Form**
+
+* **Footer**
+
+### Features to be implemented in the future
+
+Some features around interactivity and personalisation of the site are left to be implemented in the future due to either the limited expertise of the developer at this stage.
+
+## Technologies used
+---
+
+### Languages
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks, libraries and programs used
+
+* [Balsamiq](https://balsamiq.com/) - to create wireframes for the site as part of the preparation work for the project
+* [Google Fonts](https://fonts.google.com/) - to import Courgette and Montserrat fonts into the HTML file which were then used throughout the site
+* [Font Awesome](https://fontawesome.com/) - to source icons which were added to some headings for the purpose of aesthetics
+* [Coolors](https://coolors.co/ ) - to create cohesive colour scheme for the site
+* [Eye Dropper](https://eyedropper.org/) - to pick specific colours from images 
+* [Pixlr](https://pixlr.com/) - to edit and resize photos
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - to inspect and debug the code through all stages of the development
+* [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - to inspect the site for overflow 
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse) - to audit the site for performance, accessibility, SEO and best practices
+* [Am I Responsive](http://ami.responsivedesign.is/) - to produce a preview of the site on different devices
+* [W3C HTML Validator](https://validator.w3.org/) - to validate HTML code
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - to validate CSS code
+* [Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/) - to test the contrast and readability of colours used 
+* [Autoprefixer](https://autoprefixer.github.io/) - to add vendor prefixes to CSS, for compatibility with different browsers
+* [GitHub](https://github.com/) - for hosting the project code and version control 
+* [Gitpod](https://gitpod.io/) - to write the code and push it to GitHub
+* [GitHub Pages](https://pages.github.com/) - to deploy the site 
+* [Word Counter](https://wordcounter.net/character-count) - to limit number of characters used for commit messages to 50, max 72 characters
+* [Online-Spellcheck](https://www.online-spellcheck.com/) - to spellcheck the content of the site and README
+* [Unsplash](https://unsplash.com/) - for images
+* [Pexels](https://www.pexels.com/) - for images
+* [Pixabay](https://pixabay.com/) - for images
+
+
+## Deployment
+---
+### Deploying to GitHub Pages
+
+The project was developed in GitPod, committed to Git and pushed to GitHub. 
+The site was deployed to GitHub Pages with the following steps:
+
+1. Login to GitHub
+2. Navigate to your site's repository, which for this project is renatabiniek/writing-room
+3. At the top of the repository, locate and click **Settings** 
+4. In the left-hand side panel, click **Pages**
+5. Under **Source**, click the dropdown called *None* and select *Branch: Master* and *Root* folder
+6. Click **Save**
+7. A notification message will show up that the page is getting ready to be published
+8. Once refreshed, the message will change to *Your site is published* and a link to the deployed site will be provided: 
+
+    The live site can be found here: https://renatabiniek.github.io/writing-room/
+
+    ![Published Site](docs/screenshots/published-site.webp)
+
+The process can also be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).  
+
+### Forking to GitHub Repository
+
+You can create a fork (copy) of the repository. This allows you to experiment with the code without affecting the original project.
+
+To fork the repository:
+
+1. Log in to your [GitHub](https://github.com/) account 
+2. On GitHub, navigate to the repository you want to fork
+3. In the top right corner of the page, underneath your profile avatar, click **Fork**
+4. You should now have a copy of the original repository in your GitHub account
+
+### Making a local clone
+
+You can clone your repository to create a local copy on your computer. Any changes made to the local copy will not affect the original project. To clone the **Writing Room** project, follow the steps below:
+
+1. Log in to your [GitHub](https://github.com/) account and locate the [Writing Room repository](https://github.com/renatabiniek/writing-room)
+2. In the repository, click on **Code** button located above all the project files
+3. Under HTTPS, copy the link generated (https://github.com/renatabiniek/writing-room.git)
+4. Open the terminal you're using, e.g. Gitpod
+5. Change the current working directory to the location where you want the cloned directory created
+6. Type ```git clone``` and then paste the URL you copied earlier:  
+```git clone https://github.com/renatabiniek/writing-room.git``` 
+7. Press **Enter** to create your local clone.
+
+You can also refer to this [GitHub documentation](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) for detailed instructions. 
+
+## Testing
+---
+
+### Testing Approach
+
+
+### User stories testing from the UX section
+
+* **First Time Visitor Goals:**
+
+  * 
+    
+    **Test result:**  
+    **Test result:**  
+
+
+* **Returning Visitor Goals:**
+
+  * 
+
+    **Test result:**  
+    **Test result:**   
+    **Test result:**  
+
+* **Site Owner Goals:**
+
+  * 
+    **Test result:** 
+    **Test result:** 
+    
+  <br>
+
+### Validator Testing
+
+I ran the code through the HTML and CSS validators, and fixed the following initial warnings and issues:
+<br>
+
+* **HTML Validator Errors & Warnings**
+
+ 
+
+* **CSS Validator Errors & Warnings:**
+
+ 
+<br>
+
+
+* **HTML Validator - Results**
+
+  ![HTML Validator](#)
+<br>
+
+* **CSS Validator - Results**
+
+
+    ![CSS Validator](#)
+
+<br> 
+
+### Lighthouse Testing
+
+I generated desktop and mobile Lighthouse reports from Google Chrome DevTools to review performance, SEO, the best practices and accessibility of the site.  
+
+  **Desktop**
+  <br>
+
+  ![Desktop](#)
+  <br>
+
+  **Mobile**
+  <br>
+
+  ![Mobile](#)
+
+### Further Testing
+
+The following was confirmed during manual testing:
+
+  * **Navigation**
+
+  * **Footer**
+
+  * **Links and buttons**
+
+  * **Contact form:**
+
+     *Note:* Once submitted, the information doesn't go anywhere as this is not in the scope of this project. Feedback site of https://formdump.codeinstitute.net has been used as a placeholder for action.
+
+  * **Color Contrast**
+
+    [Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/)
+
+  * **Content**  
+
+  * **CI Peer Review**  
+
+  * **Family and friends**
+
+### Devices and browsers tested
+
+### Issues and Bugs
+  
+  * **Fixed**:
+  
+  * **Known**:
+
+<br>
+    
+### Credits
+---
+
+#### Code
+
+<br>
+
+#### Images 
+
+Images were sourced from [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/) and [Pixabay](https://pixabay.com/). Thank you to all the photographers!
+
+<br>
+
+#### Content
+
+<br>
+
+### Acknowledgments
+---
+
+### Disclaimer
+---
+*The X has been created for the Code Institute’s JavaScript Essentials Portfolio Project, as part of their Diploma in Full Stack Software Development.
+The requirements are to build an interactive front-end site. The site should be responding to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals.*
+
+[Back to top!](#Table-of-Contents)
