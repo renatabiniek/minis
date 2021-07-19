@@ -11,6 +11,26 @@ body {
     margin: auto;
 }
 
+#navbar {
+    height: 100px;
+}
+
+#main-title {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.title {
+    padding-top: 40px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+
+#intro {
+    padding: 20px 0;
+}
+
 .project {
     height: 40vh;
 }
