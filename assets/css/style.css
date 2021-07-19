@@ -1,0 +1,44 @@
+/*remove default margin, padding and border*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.project {
+    height: 40vh;
+}
+
+#clock {
+    background-color: rgb(190, 36, 36);
+    color: rgb(245,254,255)
+}
+
+#word-game {
+    background-color:rgb(221, 121, 28);
+}
+#memory-game {
+    background-color: rgb(231, 231, 5);
+}
+
+#project-x {
+    background-color: rgb(49, 184, 49);
+}
+
+#project-y {
+    background-color: rgb(52, 126, 196);
+}
+
+#project-z {
+    background-color: rgb(107, 9, 177);
+}
+
+#project-q {
+    background-color: rgb(143, 90, 143);
+}
